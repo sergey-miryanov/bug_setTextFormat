@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <app title="bug-setTextFormat" file="test" main="Main" version="0.0.1"
+    company="zzzzzzerg" />
+	
+	<window width="480" height="800" fps="30" orientation="portrait" resizable="true" if="web" />
+	<window width="480" height="800" fps="30" orientation="portrait" fullscreen="false" unless="web" />
+ 	
+	<set name="BUILD_DIR" value="export" />
+	
+	<!--<setenv name="no_console" value="1" />-->
+	
+	<classpath name="source" />
+	
+	<assets path="assets" if="android" >
+	</assets>
+	
+	<assets path="assets" if="desktop" >
+	</assets>
+	
+	<assets path="assets" if="target_flash" >
+	</assets>
+	
+	<assets path="assets" if="target_js" >
+	</assets>
+	
+  <assets path="assets" exclude="*.wav" if="flash" />
+  <assets path="assets" unless="flash" />
+	
+  <haxedef name="HXCPP_STACK_TRACE" />
+  <haxedef name="HXCPP_STACK_LINE" />
+  <haxedef name="HXCPP_DEBUG_LINK" />
+
+	<haxelib name="nme" />
+
+</project>
