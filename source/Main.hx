@@ -53,7 +53,7 @@ class Main extends Sprite
     t.setTextFormat(f);
 
     var t2 = new TextField();
-    t2.text = "t2";
+    t2.text = "TT EE SS TT";
     t2.x = 50;
     t2.y = 100;
 
